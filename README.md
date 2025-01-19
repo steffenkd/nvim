@@ -3,9 +3,9 @@ neovim_configuration_for writers_with_zettelkasten
 
 
 This is a fork and copy paste script kiddie approach which benefitted from the following projects:  
-- lunarvim from [chris@machine](https://x.com/i/flow/login?redirect_after_login=%2Fchrisatmachine)
-- lazyvim from [folke](https://www.lazyvim.org/  https://github.com/LazyVim/LazyVim)
-- theena's [OVI-Write](https://github.com/MiragianCycle/OVIWrite)
+- [lunarvim](https://github.com/LunarVim) from [chris@machine](https://github.com/ChristianChiarulli?tab=repositories)
+- [lazyvim](https://www.lazyvim.org/) from [folke]([https://github.com/LazyVim/LazyVim](https://github.com/folke))
+- [theena's](https://theena.net/) [OVI-Write](https://github.com/MiragianCycle/OVIWrite)
 
 It is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
 
