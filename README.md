@@ -21,10 +21,9 @@ On Linux install the following packages for a better experience:
 Set up neovim node support:  
 ```npm install -g neovim```
 
-I recommend using the following repo to get a ```Nerd Font``` (Font that supports icons), but it is not necessary.  
-[getnf](https://github.com/ronniedroid/getnf)
+I recommend using the following repo to get a ```Nerd Font``` (Font that supports icons), but it is not necessary:  [getnf](https://github.com/ronniedroid/getnf)
 
-If you already have another working nvim configuration fyou shoudl backup the folder first or just rename it.  
+If you already have another working nvim configuration you should backup the folder first or just rename it.  
 Clone/copy the nvim repository/folder into your /home/.config folder so it looks like this: /home/.config/nvim/.  
 Sicne you already installeds the ```git``` package you can also open a terminal and enter:  
 ```cd .config```
