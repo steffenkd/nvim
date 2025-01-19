@@ -9,11 +9,11 @@ This is a fork and copy paste script kiddie approach which benefitted from the f
 
 It is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
 It has:  
-- Zenmode focused writing
-- Markdown-browser-preview  
+- zenmode focused writing
+- markdown-browser-preview  
 - light/dark-mode  
-- Zettelkasten/Telekasten ability  
-- many other features whcih come automatically with neovim  
+- zettelkasten/Telekasten ability  
+- many other features which come automatically with neovim  
 
 On Linux install the following packages for a better experience:  
 ```neovim ripgrep ack git nodejs xclip clang fd-find fzf curl```
