@@ -65,15 +65,15 @@ Just cut and paste them into the ```/nvim/lua/user/``` folder and "uncomment" th
 
 KEYMAPS:  
 - The most important key is the leader key and it set as "Space".  
-- If you have several files/tabs open, press "Shift+J" or "Shift+H" to jump to the previous tab and "Shift+K" or "Shift+L" to go to the next tab.  
-- Press "Ctrl+6" to switch between the last two tabs, quite convenient when you are editing two files.  
-- To use the Markdown Previes function you have to press "Space+t+m", whereas "Space" is, like mentioned before, the leader-key, "t" stands for toggle and "m" stands for "markdown" - it will open the file in the browser and renders it markdown style.  
-- To toggle the zenmode for distraction free writing you have to press "Space+t+z", whereas "Space" is, again, the leader-key, "t" stands for toggle and "z" stands for "zenmode".  
-- To toggle between nightmode/darkmode you have to press "Space+t+l", whereas "l" stands for "light", but it switches between both modes. 
-- Press "Space+e" to open and close the foldertree view (NvimTree-toggle) on the left side of the window where you can navigate through the folders and files - use the normal nvim-keymaps "jl" for navigation and "hl" for moving up or down the folder structure (opening files).
-- If you want to add an unregonized word to the spell list, put the cursor over the word and press "Space+s+s".
-- If you want to save and close a file press "Space+w" whereas "w" stands for "write".
-- If you just want to close a file without saving/writing press "Space+q" whereas "q"stands for "quit".  
+- If you have several files/tabs open, press ```Shift+J``` or ```Shift+H``` to jump to the previous tab and ```Shift+K``` or ```Shift+L``` to go to the next tab.  
+- Press ```Ctrl+6``` to switch between the last two tabs, quite convenient when you are editing two files.  
+- To use the Markdown Previes function you have to press ```Space+t+m```, whereas ```Space``` is, like mentioned before, the leader-key, ```t``` stands for toggle and ```m``` stands for ```markdown``` - it will open the file in the browser and renders it markdown style.  
+- To toggle the zenmode for distraction free writing you have to press ```Space+t+z```, whereas ```Space``` is, again, the leader-key, ```t``` stands for toggle and ```z``` stands for "zenmode".  
+- To toggle between nightmode/darkmode you have to press ```Space+t+l```, whereas ```l``` stands for "light", but it switches between both modes. 
+- Press ```Space+e``` to open and close the foldertree view (NvimTree-toggle) on the left side of the window where you can navigate through the folders and files - use the normal nvim-keymaps ```jl``` for navigation and ```hl``` for moving up or down the folder structure (opening files).
+- If you want to add an unregonized word to the spell list, put the cursor over the word and press ```Space+s+s```.
+- If you want to save and close a file press ```Space+w``` whereas ```w``` stands for "write".
+- If you just want to close a file without saving/writing press ```Space+q``` whereas ```q```stands for "quit".  
 
 Telescope file find/search keymaps:  
 - "Space+f+f" search for a file.
@@ -81,27 +81,27 @@ Telescope file find/search keymaps:
 - "Space+f+b" telescope buffers.  
 
 The Zettelkasten keymaps:  
-"Space+z" - show dropdown menu for all mapped Telekasten commands below, Brings up the command palette
-"Space+zz" - create a new note by template, prompts for title and template
-"Space+zn" - Create a new note, prompts for title
-"Space+zf" - Find notes by filename
-"Space+zs" - Search (grep) IN all notes
-"Space+zg" - Follow the link under the cursor
-"Space+zp" - Insert a link to a note
-"Space+zy" - Yank a link to the currently open note
-"Space+zr" - Rename current note AND update the links pointing to it
-"Space+zt" - Search through all tags
-"Space+zb" - Show all notes linking to the current one
-"Space+zl" - Show all notes linking to the link under the cursor
-"Space+zd" - open daily template for note and create new diary entry in diary folder
-"Space+zi" - Paste an image from the clipboard into a file and inserts a link to it
-"Space+zii" - Browse images / media files and insert a link to the selected one
-"Space+zip" - preview image under the cursor
-"Space+zb" - Browse images / media files
-"Space+ztd" - Toggle - [ ] todo status of a line
+- ```Space+z``` - show dropdown menu for all mapped Telekasten commands below, Brings up the command palette
+- ```Space+zz``` - create a new note by template, prompts for title and template
+- ```Space+zn``` - Create a new note, prompts for title
+- ```Space+zf``` - Find notes by filename
+- ```Space+zs``` - Search (grep) IN all notes
+- ```Space+zg``` - Follow the link under the cursor
+- ```Space+zp``` - Insert a link to a note
+- ```Space+zy``` - Yank a link to the currently open note
+- ```Space+zr``` - Rename current note AND update the links pointing to it
+- ```Space+zt``` - Search through all tags
+- ```Space+zb``` - Show all notes linking to the current one
+- ```Space+zl``` - Show all notes linking to the link under the cursor
+- ```Space+zd``` - open daily template for note and create new diary entry in diary folder
+- ```Space+zi``` - Paste an image from the clipboard into a file and inserts a link to it
+- ```Space+zii``` - Browse images / media files and insert a link to the selected one
+- ```Space+zip``` - preview image under the cursor
+- ```Space+zb``` - Browse images / media files
+- ```Space+ztd``` - Toggle - [ ] todo status of a line
 
 To learn the standard keymaps for vim/neovim I highly recommend you use the vimtutor-program.  
-On Linux just open a terminal (Ctrl+Alt+t) and enter the command ```vimtutor```.  
+On Linux just open a terminal ```Ctrl+Alt+t``` and enter the command ```vimtutor```.  
 It starts a little program where you just have to follow the instructions.  
 I recommend to do it each day in the morning while running a stopwatch to see and track your improvements.  
 In the beginning it took me over 45 minutes but after several days I was able to do it in under 15 minutes.  
