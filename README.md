@@ -60,6 +60,9 @@ The configuration files for the different extensions which are listed in ```init
 I highly recommend that you take a look at:  
 - ```keymaps.lua``` to learn about the necessary shortcuts and key commands for toggle actions and use the Zettelkasten features - or change them if you like another setup.  
 - ```telekasten.lua```  to configure the Zettelkasten plugin and to set the root folder for the Zettelkasten folder you want to use, otherwise it won't work.  
+Additionally you haver to create some templates. I have put a folder named ```Zettelkasten``` into the configuration.
+Cut it and paste it into your home directory and everything should work fine.
+Or you put it in some other folder, but then you have to change the paths in the ```telekasten.lua``` file.  
 - ```colorscheme.lua```  for activating/deactivating some other colorschemes, the current colorscheme has a light and a dark theme which can be changed by pressing ```Space``` followed by ```t``` followed by either ```d``` for dark or ```l``` for light.  
 - ```alpha.lua``` is for the welcome-screen configuration file, where you have to change the Zettelkasten-folder-path, or change the cat ASCII-picture, the quote or add additional entries.  
 If you made any changes, you have to restart nvim.  
