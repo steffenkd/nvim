@@ -25,7 +25,8 @@ It has:
 - many other features which come automatically with neovim or which I haven't mentioned
 
 On Linux install the following packages with the package manager of your choice, so everything works fine:  
-```neovim ripgrep ack git nodejs xclip clang fd-find fzf curl```
+```neovim ripgrep ack git nodejs xclip clang fd-find fzf curl python3 pandoc npm wget xsel wl-clipboard cmake gettext g++```  
+Maybe some of them are not really necessary, but I haven't really checked every last one. so better to install all of them.  
 
 Set up neovim node support:  
 ```npm install -g neovim```
