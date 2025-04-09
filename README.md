@@ -63,16 +63,24 @@ In the folder ```~/.config/nvim/lua/user/not_needed/``` are several configuratio
 Just cut and paste them into the ```/nvim/lua/user/``` folder and "uncomment" them in the ```init.lua``` lua file and the next time you start nvim they get installed automatically.  
 
 
-MOST IMPORTANT KEYMAPS:  
-The most important key is the leader key and it is "Space".  
-If you have several files/tabs open, press "Shift+J" or "Shift+H" to jump to the previous tab and "Shift+K" or "Shift+L" to go to the next tab.  
-Press "Ctrl+6" to switch between the last two tabs, quite convenient when you are editing two files.  
-To use the Markdown Previes function you have to press "Space+t+m", whereas "Space" is, like mentioned before, the leader-key, "t" stands for toggle and "m" stands for "markdown" - it will open the file in the browser and renders it markdown style.  
-To toggle the zenmode for distraction free writing you have to press "Space+t+z", whereas "Space" is, again, the leader-key, "t" stands for toggle and "z" stands for "zenmode".  
-To toggle between nightmode/darkmode you have to press "Space+t+l", whereas "l" stands for "light", but it switches between both modes. 
-Press "Space+e" to open and close the foldertree view on the left side of the window where you can navigate through the folders and files - use the normal nvim-keymaps "jl" for navigation and "hl" for moving up or down the folder structure (opening files).  
+KEYMAPS:  
+- The most important key is the leader key and it set as "Space".  
+- If you have several files/tabs open, press "Shift+J" or "Shift+H" to jump to the previous tab and "Shift+K" or "Shift+L" to go to the next tab.  
+- Press "Ctrl+6" to switch between the last two tabs, quite convenient when you are editing two files.  
+- To use the Markdown Previes function you have to press "Space+t+m", whereas "Space" is, like mentioned before, the leader-key, "t" stands for toggle and "m" stands for "markdown" - it will open the file in the browser and renders it markdown style.  
+- To toggle the zenmode for distraction free writing you have to press "Space+t+z", whereas "Space" is, again, the leader-key, "t" stands for toggle and "z" stands for "zenmode".  
+- To toggle between nightmode/darkmode you have to press "Space+t+l", whereas "l" stands for "light", but it switches between both modes. 
+- Press "Space+e" to open and close the foldertree view (NvimTree-toggle) on the left side of the window where you can navigate through the folders and files - use the normal nvim-keymaps "jl" for navigation and "hl" for moving up or down the folder structure (opening files).
+- If you want to add an unregonized word to the spell list, put the cursor over the word and press "Space+s+s".
+- If you want to save and close a file press "Space+w" whereas "w" stands for "write".
+- If you just want to close a file without saving/writing press "Space+q" whereas "q"stands for "quit".  
 
-The Zettelkasten Keymaps:  
+Telescope file find/search keymaps:  
+- "Space+f+f" search for a file.
+- "Space+f+g" search for a word inside files.  
+- "Space+f+b" telescope buffers.  
+
+The Zettelkasten keymaps:  
 "Space+z" - show dropdown menu for all mapped Telekasten commands below, Brings up the command palette
 "Space+zz" - create a new note by template, prompts for title and template
 "Space+zn" - Create a new note, prompts for title
