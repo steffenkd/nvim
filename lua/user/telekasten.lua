@@ -30,7 +30,7 @@ local M = {
 function M.config()
 
   require("telekasten").setup({
- home = vim.fn.expand("/home/luci/shard/PARA/00-meshroom"), -- Put the name of your notes directory here
+ home = vim.fn.expand("/home/..../zettelkasten"), -- Put the name of your notes directory here
 
 -- if true, telekasten will be enabled when opening a note within the configured home
     take_over_my_home = true,
@@ -40,9 +40,9 @@ function M.config()
     auto_set_filetype = true,
 
     -- dir names for special notes (absolute path or subdir name)
-    dailies      = "/home/luci/shard/PARA/00-meshroom/00_diary",
-    weeklies     = "/home/luci/shard/PARA/00-meshroom/0-blog",
-    templates    = "/home/luci/shard/PARA/00-meshroom/templates",
+    dailies      = "/home/..../zettelkasten/00_diary",
+    weeklies     = "/home/..../zettelkasten/0-blog",
+    templates    = "/home/..../zettelkasten/templates",
 
     -- image (sub)dir for pasting
     -- dir name (absolute path or subdir name)
@@ -59,15 +59,15 @@ function M.config()
 
     -- template for new notes (new_note, follow_link)
     -- set to `nil` or do not specify if you do not want a template
-    template_new_note = "/home/luci/shard/PARA/00-meshroom/templates/zettel_template.md",
+    template_new_note = "/home/..../zettelkasten/templates/zettel_template.md",
 
    -- template for newly created daily notes (goto_today)
     -- set to `nil` or do not specify if you do not want a template
-    template_new_daily = "/home/luci/shard/PARA/00-meshroom/00_diary/daily_template.md",
+    template_new_daily = "/home/..../zettelkasten/00_diary/daily_template.md",
 
     -- template for newly created weekly notes (goto_thisweek)
     -- set to `nil` or do not specify if you do not want a template
-    template_new_weekly= "/home/luci/shard/PARA/00-meshroom/0-blog/steffenkd-website-blog-template.md",
+    template_new_weekly= "/home/..../zettelkasten/...",
 
     -- image link style
     -- wiki:     ![[image name]]
