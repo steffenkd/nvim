@@ -1,21 +1,26 @@
 # nvim
 neovim_configuration_for writers_with_zettelkasten
 
+VIDEO-TUTORIAL:  
 
-This is a fork and copy paste script kiddie approach which benefitted from the following projects which I want to mention to give credit to and to thank them:  
+
+
+This is a fork and copy paste script kiddie approach which benefitted from the following projects which I want to mention to give credit to and thank them:  
 - [lunarvim](https://github.com/LunarVim) from [chris@machine](https://github.com/ChristianChiarulli?tab=repositories)
 - [lazyvim](https://www.lazyvim.org/) from [folke](https://github.com/folke)
 - [theena's](https://theena.net/) writing implementation [OVI-Write](https://github.com/MiragianCycle/OVIWrite)
+Thankyou very much!
 
 It is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
 It has:  
-- zenmode focused writing
+- zenmode focused writing  
 - markdown-browser-preview  
-- light/dark-mode  
-- zettelkasten ability (the extension is called *telekasten*) 
-- many other features which come automatically with neovim  
+- light/dark-mode colorscheme
+- zettelkasten ability (the extension is called *telekasten*)  
+- zenmode for distraction free writing
+- many other features which come automatically with neovim or which I haven't mentioned
 
-On Linux install the following packages so everything works fine:  
+On Linux install the following packages with the package manager of your choice, so everything works fine:  
 ```neovim ripgrep ack git nodejs xclip clang fd-find fzf curl```
 
 Set up neovim node support:  
@@ -25,10 +30,10 @@ I recommend using the following repo to get a ```Nerd Font``` (Font that support
 Thanks again to *chris@machine* for mentioning this in his README.  
 
 If you already have another working nvim configuration you should backup the existing folder first or just rename it.  
-Clone/copy the nvim repository/folder into your ```/home/.config``` folder so it looks like this: ```/home/.config/nvim/```.  
+Clone/copy the nvim repository/folder into your ```/home/.config``` folder so it looks like this: ```/home/.config/nvim/``` whereas the nvim-folder is the one from my github.  
 Since you have already installed the ```git``` package you can also open the command line and enter:  
 ```git clone https://github.com/steffenkd/nvim ~/.config/nvim``` to clone the nvim configuration folder into /home/.config.  
-The .config folder is an invisible folder in your home directory and you can make this folder visible by pressing ```Ctrl+h```.  
+The .config folder is an invisible folder in your home directory and you can make this folder visible by pressing ```Ctrl+h``` when you are in your home directory.  
 
 Run neovim in the terminal with the command:  
 ```nvim```
@@ -36,21 +41,67 @@ Run neovim in the terminal with the command:
 The first time it will update and install several extensions and addons, which can take a while.  
 Update one more time afterwards by pressing ```Shift+U```.  
 Close (```Shift+Z+Z```) and restart (typing ```nvim``` again) after everything has installed and updated.  
-Run the command ```:checkhealth```, to see if there are any packages or dependencies you forgot to install.  
+Run the command ```:checkhealth```, to see if there are any packages or dependencies you forgot to install or which I forgot to mention and install them with the package manager of your choice.
 
 In the nvim-Folder you will find a file named *init.lua*.  
 This is the main file, where you can activate or deactivate certain extensions/plugins and which is loading other configuration files like *keymaps* or *colorschemes*.  
+I have commented on them so you may have some idea what they are for.  
 You can also edit it by pressing ```c``` in neovim at the beginning to access this configuration file like stated in the menu.  
 Activation or deactivation of certain functions can be made by either add or remove the commentary flags ```--``` (double hyphen) in front of a line.  
 So if you add two hyphens in front of a line, the function of the line is being converted into a comment and therefore deactivated.  
-If you want to deactivate or activate larger parts like in ```colorscheme.lua``` you have to put ```--[[```  (double hyphen and double square brackets) at the beginning of the block of code and ```]]--``` (double hyphen and double square brackets) at the end of the block of code to indicate it as a comment and therefore deactivate the part.  
+If you want to deactivate or activate larger parts like in ```colorscheme.lua```, where I have placed several deactivated colorschemes, you have to put ```--[[```  (double hyphen and double square brackets) at the beginning of the block of code and ```]]--``` (double hyphen and double square brackets) at the end of the block of code to indicate it as a comment and therefore deactivate the part.  
 
-The configuration files are all stored in ```/nvim/lua/user/```.  
+The configuration files for the different extensions which are listed in ```init.lua``` are all stored in ```/nvim/lua/user/```.  
 I highly recommend that you take a look at:  
 - ```keymaps.lua``` to learn about the necessary shortcuts and key commands for toggle actions and use the Zettelkasten features - or change them if you like another setup.  
 - ```telekasten.lua```  to configure the Zettelkasten plugin and to set the root folder for the Zettelkasten; otherwise it won't work.  
 - ```colorscheme.lua```  for activating/deactivating some other colorschemes, the current colorscheme has a light and a dark theme which can be changed by pressing ```Space``` followed by ```t``` followed by either ```d``` for dark or ```l``` for light.  
-- ```alpha.lua``` is for the welcome-screen configuration file, where you have to change the Zettelkasten-folder-path, or change the cat picture or add additional entries.  
+- ```alpha.lua``` is for the welcome-screen configuration file, where you have to change the Zettelkasten-folder-path, or change the cat ASCII-picture, the quote or add additional entries.  
 If you made any changes, you have to restart nvim.  
 
-In the folder ```~/.config/nvim/lua/user/not_needed/``` are several configuration files, which I have been deactivated because it was more
+In the folder ```~/.config/nvim/lua/user/not_needed/``` are several configuration files, which I have deactivated.  
+Just cut and paste them into the ```/nvim/lua/user/``` folder and "uncomment" them in the ```init.lua``` lua file and the next time you start nvim they get installed automatically.  
+
+
+MOST IMPORTANT KEYMAPS:  
+The most important key is the leader key and it is "Space".  
+If you have several files/tabs open, press "Shift+J" or "Shift+H" to jump to the previous tab and "Shift+K" or "Shift+L" to go to the next tab.  
+Press "Ctrl+6" to switch between the last two tabs, quite convenient when you are editing two files.  
+To use the Markdown Previes function you have to press "Space+t+m", whereas "Space" is, like mentioned before, the leader-key, "t" stands for toggle and "m" stands for "markdown" - it will open the file in the browser and renders it markdown style.  
+To toggle the zenmode for distraction free writing you have to press "Space+t+z", whereas "Space" is, again, the leader-key, "t" stands for toggle and "z" stands for "zenmode".  
+To toggle between nightmode/darkmode you have to press "Space+t+l", whereas "l" stands for "light", but it switches between both modes. 
+Press "Space+e" to open and close the foldertree view on the left side of the window where you can navigate through the folders and files - use the normal nvim-keymaps "jl" for navigation and "hl" for moving up or down the folder structure (opening files).  
+
+The Zettelkasten Keymaps:  
+"Space+z" - show dropdown menu for all mapped Telekasten commands below, Brings up the command palette
+"Space+zz" - create a new note by template, prompts for title and template
+"Space+zn" - Create a new note, prompts for title
+"Space+zf" - Find notes by filename
+"Space+zs" - Search (grep) IN all notes
+"Space+zg" - Follow the link under the cursor
+"Space+zp" - Insert a link to a note
+"Space+zy" - Yank a link to the currently open note
+"Space+zr" - Rename current note AND update the links pointing to it
+"Space+zt" - Search through all tags
+"Space+zb" - Show all notes linking to the current one
+"Space+zl" - Show all notes linking to the link under the cursor
+"Space+zd" - open daily template for note and create new diary entry in diary folder
+"Space+zi" - Paste an image from the clipboard into a file and inserts a link to it
+"Space+zii" - Browse images / media files and insert a link to the selected one
+"Space+zip" - preview image under the cursor
+"Space+zb" - Browse images / media files
+"Space+ztd" - Toggle - [ ] todo status of a line
+
+To learn the standard keymaps for vim/neovim I highly recommend you use the vimtutor-program.  
+On Linux just open a terminal (Ctrl+Alt+t) and enter the command ```vimtutor```.  
+It starts a little program where you just have to follow the instructions.  
+I recommend to do it each day in the morning while running a stopwatch to see and track your improvements.  
+In the beginning it took me over 45 minutes but after several days I was able to do it in under 15 minutes.  
+Vim is a very powerful text editor which often comes preinstalled and the shortcuts and commands are really nice to know, especially since you can use them in several other programs through extensions as well - on internet browsers you can use "Vimium" for example.  
+
+
+
+
+
+
+
