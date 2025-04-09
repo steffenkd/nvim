@@ -40,8 +40,8 @@ function M.config()
     auto_set_filetype = true,
 
     -- dir names for special notes (absolute path or subdir name)
-    dailies      = "/home/..../zettelkasten/00_diary",
-    weeklies     = "/home/..../zettelkasten/0-blog",
+    dailies      = "/home/..../zettelkasten/diary",
+    weeklies     = "/home/..../zettelkasten/weekly",
     templates    = "/home/..../zettelkasten/templates",
 
     -- image (sub)dir for pasting
