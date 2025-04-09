@@ -1,6 +1,10 @@
 # nvim
 neovim_configuration_for writers_with_zettelkasten
 
+Follow me on:  
+https://steffenkd.de
+RSS available!
+
 VIDEO-TUTORIAL:  
 
 
