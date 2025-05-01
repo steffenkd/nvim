@@ -28,8 +28,16 @@ It has the following features:
 - lsp (Language server protocol) can be activated, check out the ```init.lua``` file.  
 - many other features which come automatically with neovim or which I haven't mentioned or have been deactivated in the ```init.lua``` file.  
 
-On Linux install the following packages with the package manager of your choice, so everything works:  
-```neovim ripgrep ack git nodejs xclip clang fd-find fzf curl python3 pandoc npm wget xsel wl-clipboard cmake gettext g++```  
+On debian you have to add the unstable repository, because the standard ones are outdated and will give you errors.  
+```sudo add-apt-repository ppa:neovim-ppa/unstable```
+```sudo apt-get update```
+```sudo apt-get install neovim```
+
+On Fedora you can use the normal packages sinde they are up to date.  
+```sudo dnf install neovim```
+
+Install the following dependencies with the package manager of your choice, so everything works:  
+```ripgrep ack git nodejs xclip clang fd-find fzf curl python3 pandoc npm wget xsel wl-clipboard cmake gettext g++```  
 Maybe some of them are not really necessary, but I haven't really checked. So better to install all of them.  
 
 Set up neovim node support:  
