@@ -14,7 +14,8 @@ This is a fork and copy paste script kiddie approach which benefitted from the f
 - [lazyvim](https://www.lazyvim.org/) from [folke](https://github.com/folke)
 - [theena's](https://theena.net/) writing implementation [OVI-Write](https://github.com/MiragianCycle/OVIWrite)
 
-Thankyou very much!
+Thank you very much!!!
+
 
 This is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
 It has the following features:  
