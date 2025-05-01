@@ -6,7 +6,7 @@ Follow me on:
 RSS available!
 
 VIDEO-TUTORIAL:  
-
+Coming soon...
 
 
 This is a fork and copy paste script kiddie approach which benefitted from the following projects which I want to mention to give credit to and thank them:  
@@ -15,16 +15,18 @@ This is a fork and copy paste script kiddie approach which benefitted from the f
 - [theena's](https://theena.net/) writing implementation [OVI-Write](https://github.com/MiragianCycle/OVIWrite)
 Thankyou very much!
 
-It is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
-It has:  
-- zenmode focused writing  
-- markdown-browser-preview  
-- light/dark-mode colorscheme
-- zettelkasten ability (the extension is called *telekasten*)  
-- zenmode for distraction free writing
-- many other features which come automatically with neovim or which I haven't mentioned
+This is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
+It has the following features:  
+- markdown-browser-preview (toggle on/off).  
+- light/dark-mode colorscheme (toggle on/off).  
+- zettelkasten ability (the extension is called *telekasten*.   
+- zenmode for distraction free writing (toffle on/off).  
+- telescope fuzzy finder for searching.  
+- spell check (toggle on/off).  
+- lsp (Language server protocol) can be activated, check out the ```init.lua``` file.  
+- many other features which come automatically with neovim or which I haven't mentioned or have been deactivated in the ```init.lua``` file.  
 
-On Linux install the following packages with the package manager of your choice, so everything works fine:  
+On Linux install the following packages with the package manager of your choice, so everything works:  
 ```neovim ripgrep ack git nodejs xclip clang fd-find fzf curl python3 pandoc npm wget xsel wl-clipboard cmake gettext g++```  
 Maybe some of them are not really necessary, but I haven't really checked. So better to install all of them.  
 
@@ -49,16 +51,16 @@ Close (```Shift+Z+Z```) and restart (typing ```nvim``` again) after everything h
 Run the command ```:checkhealth```, to see if there are any packages or dependencies you forgot to install or which I forgot to mention and install them with the package manager of your choice.
 
 In the nvim-Folder you will find a file named *init.lua*.  
-This is the main file, where you can activate or deactivate certain extensions/plugins and which is loading other configuration files like *keymaps* or *colorschemes*.  
-I have commented on them so you may have some idea what they are for.  
+This is the main file, where you can activate or deactivate certain extensions/plugins and which is loading other configuration files like ```keymaps.lua``` or ```colorschemes.lua```.  
+I made comments on most of the extensions in the ```init.lua``` file so you may have some idea what they are for.  
 You can also edit it by pressing ```c``` in neovim at the beginning to access this configuration file like stated in the menu.  
-Activation or deactivation of certain functions can be made by either add or remove the commentary flags ```--``` (double hyphen) in front of a line.  
+Activation or deactivation of certain extensions/functions can be made by either add or remove the commentary flags ```--``` (double hyphen) in front of a line.  
 So if you add two hyphens in front of a line, the function of the line is being converted into a comment and therefore deactivated.  
 If you want to deactivate or activate larger parts like in ```colorscheme.lua```, where I have placed several deactivated colorschemes, you have to put ```--[[```  (double hyphen and double square brackets) at the beginning of the block of code and ```]]--``` (double hyphen and double square brackets) at the end of the block of code to indicate it as a comment and therefore deactivate the part.  
 
 The configuration files for the different extensions which are listed in ```init.lua``` are all stored in ```/nvim/lua/user/```.  
 I highly recommend that you take a look at:  
-- ```keymaps.lua``` to learn about the necessary shortcuts and key commands for toggle actions and use the Zettelkasten features - or change them if you like another setup.  
+- ```keymaps.lua``` to learn about the necessary shortcuts and key commands for toggle certain actions and commands and use the Zettelkasten features - or change them if you prefer other keymaps.  
 - ```telekasten.lua```  to configure the Zettelkasten plugin and to set the root folder for the Zettelkasten folder you want to use, otherwise it won't work.  
 Additionally you haver to create some templates. I have put a folder named ```Zettelkasten``` into the configuration.
 Cut it and paste it into your home directory and everything should work fine.
@@ -67,7 +69,7 @@ Or you put it in some other folder, but then you have to change the paths in the
 - ```alpha.lua``` is for the welcome-screen configuration file, where you have to change the Zettelkasten-folder-path, or change the cat ASCII-picture, the quote or add additional entries.  
 If you made any changes, you have to restart nvim.  
 
-In the folder ```~/.config/nvim/lua/user/not_needed/``` are several configuration files, which I have deactivated.  
+In the folder ```~/.config/nvim/lua/user/not_needed/``` are several configuration files, which I have deactivated and put in this separate folder.  
 Just cut and paste them into the ```/nvim/lua/user/``` folder and "uncomment" them in the ```init.lua``` lua file and the next time you start nvim they get installed automatically.  
 
 
@@ -79,7 +81,8 @@ KEYMAPS:
 - To toggle the zenmode for distraction free writing you have to press ```Space+t+z```, whereas ```Space``` is, again, the leader-key, ```t``` stands for toggle and ```z``` stands for "zenmode".  
 - To toggle between nightmode/darkmode you have to press ```Space+t+l```, whereas ```l``` stands for "light", but it switches between both modes. 
 - Press ```Space+e``` to open and close the foldertree view (NvimTree-toggle) on the left side of the window where you can navigate through the folders and files - use the normal nvim-keymaps ```jl``` for navigation and ```hl``` for moving up or down the folder structure (opening files).
-- If you want to add an unregonized word to the spell list, put the cursor over the word and press ```Space+s+s```.
+- If you want to add an unregonized word to the spell list, put the cursor over the word in visual mode and press ```zg```.
+- Toggle spell check ```Space+s+s```.
 - If you want to save and close a file press ```Space+w``` whereas ```w``` stands for "write".
 - If you just want to close a file without saving/writing press ```Space+q``` whereas ```q```stands for "quit".  
 
@@ -108,12 +111,12 @@ The Zettelkasten keymaps:
 - ```Space+zb``` - Browse images / media files
 - ```Space+ztd``` - Toggle - [ ] todo status of a line
 
-To learn the standard keymaps for vim/neovim I highly recommend you use the vimtutor-program.  
+For learning the standard keymaps for vim/neovim I highly recommend you use the vimtutor-program.  
 On Linux just open a terminal ```Ctrl+Alt+t``` and enter the command ```vimtutor```.  
 It starts a little program where you just have to follow the instructions.  
-I recommend to do it each day in the morning while running a stopwatch to see and track your improvements.  
+I recommend to do it each day in the morning while running a stopwatch to see and track your improvements over the first week.  
 In the beginning it took me over 45 minutes but after several days I was able to do it in under 15 minutes.  
-Vim is a very powerful text editor which often comes preinstalled and the shortcuts and commands are really nice to know, especially since you can use them in several other programs through extensions as well - on internet browsers you can use "Vimium" for example.  
+Vim is a very powerful text editor which often comes preinstalled and the shortcuts and commands are really nice to know, especially since you can use them in several other programs through extensions as well - on some internet browsers i.e. you can use [Vimium](https://vimium.github.io/) for example.  
 
 
 
