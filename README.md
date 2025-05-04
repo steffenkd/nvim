@@ -1,7 +1,7 @@
 # nvim
 neovim_configuration_for writers_with_zettelkasten  
 
-Because keyboard and text-editor are mightier than the sword!  
+Because keyboard and text-editor are on par with the sword!  
 
 Follow me on:   
 [steffenkd](https://steffenkd.de)  
@@ -168,7 +168,6 @@ The Zettelkasten keymaps:
 If you have any improvements or recommendations which is quite likely, you can write me an e-mail.  
 My contact information is available on my homepage.  
 
-Always remember: keyboard and text editor are mightier than the sword!  
 
 
 
