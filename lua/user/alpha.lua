@@ -131,7 +131,7 @@ dashboard.section.header.val = {
 
 
   dashboard.section.buttons.val = {
-    button("zk", icons.git.Repo .. " Zettelkasten", ":e ~/shard/PARA/00-meshroom/01_genesis.md <CR>"),
+    button("zk", icons.git.Repo .. " Zettelkasten", ":e /home/zettelkasten/anchor.md <CR>"),
     button("zz", icons.ui.NewFile .. " New Zettel",":Telekasten new_templated_note<CR>"),
     button("f", icons.ui.Files .. " Find file", ":Telescope find_files <CR>"),
     button("n", icons.ui.NewFile .. " New file", ":ene <BAR> startinsert <CR>"),
@@ -183,10 +183,12 @@ return
       dashboard.section.footer.val = {
            "",
            "",
-           "If you lose, never lose the lesson!",
+           "        If you lose, never lose the lesson.",
+           "                          69",
+           "Keyboard and text-editor are mightier than the sword.",
            "",
            "",
-           "  Loaded " .. stats.count .. " plugins in " .. ms .. "ms",
+           "           Loaded " .. stats.count .. " plugins in " .. ms .. "ms",
 }
       pcall(vim.cmd.AlphaRedraw)
     end,
