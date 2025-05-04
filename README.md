@@ -5,17 +5,30 @@ Follow me on:
 [steffenkd](https://steffenkd.de)  
 RSS available!
 
-VIDEO-TUTORIAL:  
+---------
+
+VIDEO-TUTORIAL:   
 Coming soon...
 
+---------
 
-This is a fork and copy paste script kiddie approach which benefitted from the following projects which I want to mention to give credit to and thank them:  
-- [lunarvim](https://github.com/LunarVim) from [chris@machine](https://github.com/ChristianChiarulli?tab=repositories)
-- [lazyvim](https://www.lazyvim.org/) from [folke](https://github.com/folke)
-- [theena's](https://theena.net/) writing implementation [OVI-Write](https://github.com/MiragianCycle/OVIWrite)
+FIRST:  
+For learning the standard keymaps for vi/vim/neovim I highly recommend you use the vimtutor-program.  
+On Linux just open a terminal ```Ctrl+Alt+t``` and enter the command ```vimtutor```.  
+It starts a little program where you just have to follow the instructions.  
+I recommend to do it each day in the morning while running a stopwatch to see and track your improvements over the first week.  
+In the beginning it took me over 45 minutes but after several days I was able to do it in under 15 minutes.  
+Vim is a very powerful text editor which often comes preinstalled and the shortcuts and commands are really nice to know, especially since you can use them in several other programs through extensions as well - on some internet browsers i.e. you can use [Vimium](https://vimium.github.io/) for example.  
 
+---------
+
+WHAT IS THIS?
+
+This is a fork and copy paste script kiddie approach which benefitted from the following projects which I want to mention to give credit to and thank them:   
+- [lunarvim](https://github.com/LunarVim) from [chris@machine](https://github.com/ChristianChiarulli?tab=repositories)  
+- [lazyvim](https://www.lazyvim.org/) from [folke](https://github.com/folke)  
+- [theena's](https://theena.net/) writing implementation [OVI-Write](https://github.com/MiragianCycle/OVIWrite)  
 Thank you very much!!!
-
 
 This is a neovim implementation for writers, bloggers and zettelkasten enthusiasts.  
 It has the following features:  
@@ -27,6 +40,10 @@ It has the following features:
 - spell check (toggle on/off).  
 - lsp (Language server protocol) can be activated, check out the ```init.lua``` file.  
 - many other features which come automatically with neovim or which I haven't mentioned or have been deactivated in the ```init.lua``` file.  
+
+---------
+
+LINUX INSTALLATION:  
 
 On debian you have to add the unstable repository, because the standard ones are outdated and will give you errors.  
 ```sudo add-apt-repository ppa:neovim-ppa/unstable```
@@ -60,6 +77,10 @@ Update one more time afterwards by pressing ```Shift+U```.
 Close (```Shift+Z+Z```) and restart (typing ```nvim``` again) after everything has installed and updated.  
 Run the command ```:checkhealth```, to see if there are any packages or dependencies you forgot to install or which I forgot to mention and install them with the package manager of your choice.
 
+---------
+
+GENERAL CONFIGURATION AND CUSTOMIZATION:  
+
 In the nvim-Folder you will find a file named *init.lua*.  
 This is the main file, where you can activate or deactivate certain extensions/plugins and which is loading other configuration files like ```keymaps.lua``` or ```colorschemes.lua```.  
 I made comments on most of the extensions in the ```init.lua``` file so you may have some idea what they are for.  
@@ -82,8 +103,25 @@ If you made any changes, you have to restart nvim.
 In the folder ```~/.config/nvim/lua/user/not_needed/``` are several configuration files, which I have deactivated and put in this separate folder.  
 Just cut and paste them into the ```/nvim/lua/user/``` folder and "uncomment" them in the ```init.lua``` lua file and the next time you start nvim they get installed automatically.  
 
+---------
+
+ZETTELKASTEN CONFIGURATION AND CUSTOMIZATION:  
+
+Some additional configuration advice for the Zettelkasten, regarding the ```telekasten.lua``` and the ```alpha.lua``` files which are located in ```nvim/lua/user/...```:  
+You have to create a folder in your home directory named ```zettelkasten``` and should create an empty file named ```anchor.md``` inside the folder.  
+I have set the standard path for the zettelkasten on linux to the home directory as a folder called ```zettelkasten```.  
+So the path is ```/home/zettelkasten``` which is why you have to create said folder.  
+If you want another location you have to change the paths accordingly in the ```telekasten.lua``` file.  
+Simply replace the ```/home/zettelkasten/...``` paths with your path of choice.  
+Additionally the ```alpha.lua``` extension is responsible for the neovim welcome screen and you can configure the appearance, including adding additional shortcuts to the menu, other ASCII-art pieces or quotes.  
+In my zettelkasten I have a main-file, where I have several links to the my most important entry points into my zettelkasten, which I can access by pressing ```zk``` to get an overview over some entry points into my zettelkasten.  
+I named this file ```anchor.md``` and it is located at ```/home/zettelkasten/anchor.md```.  
+If you do not like it, you have to edit the ```alpha.lua``` file and choose either another name or delete it completely if you don't need or like it.  
+
+---------
 
 KEYMAPS:  
+
 - The most important key is the leader key and it set as "Space".  
 - If you have several files/tabs open, press ```Shift+J``` or ```Shift+H``` to jump to the previous tab and ```Shift+K``` or ```Shift+L``` to go to the next tab.  
 - Press ```Ctrl+6``` to switch between the last two tabs, quite convenient when you are editing two files.  
@@ -121,12 +159,8 @@ The Zettelkasten keymaps:
 - ```Space+zb``` - Browse images / media files
 - ```Space+ztd``` - Toggle - [ ] todo status of a line
 
-For learning the standard keymaps for vim/neovim I highly recommend you use the vimtutor-program.  
-On Linux just open a terminal ```Ctrl+Alt+t``` and enter the command ```vimtutor```.  
-It starts a little program where you just have to follow the instructions.  
-I recommend to do it each day in the morning while running a stopwatch to see and track your improvements over the first week.  
-In the beginning it took me over 45 minutes but after several days I was able to do it in under 15 minutes.  
-Vim is a very powerful text editor which often comes preinstalled and the shortcuts and commands are really nice to know, especially since you can use them in several other programs through extensions as well - on some internet browsers i.e. you can use [Vimium](https://vimium.github.io/) for example.  
+
+
 
 
 
