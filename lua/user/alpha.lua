@@ -184,7 +184,7 @@ return
            "",
            "",
            "        If you lose, never lose the lesson.",
-           "                          69",
+           "",
            "Keyboard and text-editor are mightier than the sword.",
            "",
            "",
