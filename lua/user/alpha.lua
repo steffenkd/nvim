@@ -185,7 +185,7 @@ return
            "",
            "        If you lose, never lose the lesson.",
            "",
-           "Keyboard and text-editor are mightier than the sword.",
+           "Keyboard and text-editor are on par with the sword.",
            "",
            "",
            "           Loaded " .. stats.count .. " plugins in " .. ms .. "ms",
