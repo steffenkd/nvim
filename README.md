@@ -8,11 +8,13 @@ RSS available!
 ---------
 
 VIDEO-TUTORIAL:   
+
 Coming soon...
 
 ---------
 
 FIRST:  
+
 For learning the standard keymaps for vi/vim/neovim I highly recommend you use the vimtutor-program.  
 On Linux just open a terminal ```Ctrl+Alt+t``` and enter the command ```vimtutor```.  
 It starts a little program where you just have to follow the instructions.  
