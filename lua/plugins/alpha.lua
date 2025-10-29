@@ -23,8 +23,8 @@ return {
     -- Set menu
     dashboard.section.buttons.val = {
 
-        dashboard.button("zk", " " .. " Zettelkasten", ":e /vaults/zettelkasten/index.md <CR>"),
-        dashboard.button("zb", " " .. " Zettelkasten2", ":e /vaults/zettelkasten2/index2.md <CR>"),
+        dashboard.button("zk", " " .. " Zettelkasten", ":e /home/yourusername/vaults/zettelkasten/index.md <CR>"),
+        dashboard.button("zb", " " .. " Zettelkasten2", ":e home/yourusername/vaults/zettelkasten2/index2.md <CR>"),
         dashboard.button("zz", " " .. " New Zettel",":Telekasten new_templated_note<CR>"),
         dashboard.button("f ", "🔍 " .. " Find file", ":Telescope find_files <CR>"),
         dashboard.button("n ", " " .. " New file", ":ene <BAR> startinsert <CR>"),
