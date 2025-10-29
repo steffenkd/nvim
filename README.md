@@ -115,7 +115,8 @@ Some paths in the telekasten.lua file need to configured to fit your local setup
 We will use the power of neovim/vim to edit all those changes with just one command.
 ```:%s/yourusername/nowtypeyourusername/g```
 This command replaces all yourusername occasions in the text with nowtypeyourusername and substitues it.
-You will learn this command when you are doing the vimtutor tutorial.  
+You will learn this command when you are doing the vimtutor tutorial.
+Now apply the same command on the "alpha.lua" file, since there are also two occasions, where the username has to be replaced.  
 
 ---------
 
