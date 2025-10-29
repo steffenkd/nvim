@@ -52,9 +52,9 @@ It has the following features:
 LINUX INSTALLATION:  
 
 On debian you have to add the unstable repository, because the standard ones are outdated and will give you errors.  
-```sudo add-apt-repository ppa:neovim-ppa/unstable```
-```sudo apt-get update```
-```sudo apt-get install neovim```
+```sudo add-apt-repository ppa:neovim-ppa/unstable```  
+```sudo apt-get update```  
+```sudo apt-get install neovim```  
 
 On Fedora you can use the normal packages sinde they are up to date.  
 ```sudo dnf install neovim```
