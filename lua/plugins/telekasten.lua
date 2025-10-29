@@ -42,11 +42,10 @@ function M.config()
   require("telekasten").setup({
  
 
-home = vim.fn.expand("~/ipara/0-vaults/"), -- Put the name of your notes directory here
+home = vim.fn.expand("~/vaults/"), -- Put the name of your notes directory here
 
 
 vaults = {
- --meshroom = { home = vim.fn.expand("/home/lucidebris/ipara/00-meshroom/") },
  default = { home = vim.fn.expand("~/vaults/zettelkasten1/") },
  zettelkasten2 = { home = vim.fn.expand("~/vaults/zettelkasten2/") }, -- Put the name of your notes directory here
  zettelkasten1 = { home = vim.fn.expand("~/vaults/zettelkasten1/") },
