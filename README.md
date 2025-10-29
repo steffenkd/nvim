@@ -105,12 +105,17 @@ The configuration files for the different plugins are all stored under ```/nvim/
 Some others are stored under ```/nvim/lua/config/```
 I highly recommend that you take a look at:  
 - ```keymaps.lua``` to learn about the necessary shortcuts and key commands for toggle certain actions and commands and use the Zettelkasten features - or change them if you prefer other keymaps.  
+- ```colorscheme.lua```  for activating/deactivating some other colorschemes, the current colorscheme has a light and a dark theme which can be changed by pressing ```Space``` followed by ```t``` followed by either ```d``` for dark or ```l``` for light.  
+- ```alpha.lua``` is for the welcome-screen configuration file, where you have to change the Zettelkasten-folder-path, or change the cat ASCII-picture, the quote or add additional entries.  
+If you made any changes, you have to restart nvim.
 - ```telekasten.lua```  to configure the Zettelkasten plugin - later you can change the root folder for the Zettelkasten and create your own layout.  
 Like already mentioned before, I have put a folder named ```vaults``` into the nvim configuration.
 Cut it and paste it into your home directory and everything should work fine.
-- ```colorscheme.lua```  for activating/deactivating some other colorschemes, the current colorscheme has a light and a dark theme which can be changed by pressing ```Space``` followed by ```t``` followed by either ```d``` for dark or ```l``` for light.  
-- ```alpha.lua``` is for the welcome-screen configuration file, where you have to change the Zettelkasten-folder-path, or change the cat ASCII-picture, the quote or add additional entries.  
-If you made any changes, you have to restart nvim.  
+Some paths in the telekasten.lua file need to configured to fit your local setup, mainly your username.
+We will use the power of neovim/vim to edit all those changes with just one command.
+```:%s/yourusername/nowtypeyourusername/g```
+This command replaces all yourusername occasions in the text with nowtypeyourusername and substitues it.
+You will learn this command when you are doing the vimtutor tutorial.  
 
 ---------
 
