@@ -89,9 +89,9 @@ Run the command ```:checkhealth```, to see if there are any packages or dependen
 
 GENERAL CONFIGURATION AND CUSTOMIZATION:  
 
-Navigate into the */.config/nvim/* folder.  
-There should be a folder named *vaults*.  
-Cut this folder and insert it into your home folder, so that the *vaults* folder is in the same directory as the */.config* folder.  
+Navigate into the ```/.config/nvim/``` folder.  
+There should be a folder named ```vaults````.  
+Cut this folder and insert it into your home folder, so that the *vaults* folder is in the same directory as the ```/.config``` folder.  
 This is necessary for a working zettelkasten functionality.  
 If you have understood how everything works, you can setup your own structure later if you want.  
 
